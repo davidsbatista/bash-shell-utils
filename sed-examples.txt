@@ -1,0 +1,3 @@
+# clean tags from a file
+
+sed 's/<[^>]*>//g' file.xml
