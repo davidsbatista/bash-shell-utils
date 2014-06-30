@@ -8,7 +8,6 @@ infile_name="$@"
 if [ -z "$infile_name" ]; then
     echo " "
     echo "You did not tell me the file name, so I will exit now."
-    echo " "
     exit
 fi
 echo " "
