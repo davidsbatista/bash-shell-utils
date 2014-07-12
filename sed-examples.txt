@@ -1,7 +1,5 @@
 # clean tags from a file
-
 sed 's/<[^>]*>//g' file.xml
 
-
 # remove lines from a file containing to consequentes tab spaces
-sed '/\t\t/d' lixo.txt
+sed '/\t\t/d' file.txt
