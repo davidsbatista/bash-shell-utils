@@ -1,5 +1,5 @@
 # clean tags from a file
 sed 's/<[^>]*>//g' file.xml
 
-# remove lines from a file containing to consequentes tab spaces
+# remove lines from a file containing two consequent ocurrences of tab spaces
 sed '/\t\t/d' file.txt
