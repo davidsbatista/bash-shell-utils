@@ -3,3 +3,6 @@ sed 's/<[^>]*>//g' file.xml
 
 # remove lines from a file containing two consequent ocurrences of tab spaces
 sed '/\t\t/d' file.txt
+
+# remove all URLS from file
+sed -e 's!http[s]\?://\S*!!g' big_corpus_blogs.txt > big_corpus_blogs_no_urls.txt
