@@ -6,3 +6,7 @@ sed '/\t\t/d' file.txt
 
 # remove all URLS from file
 sed -e 's!http[s]\?://\S*!!g' big_corpus_blogs.txt > big_corpus_blogs_no_urls.txt
+
+
+# find overlapping named-entities
+grep -oP '<[A-Z]+>[^<]+<[A-Z]+>[^<]+</[A-Z]+>[^<]+</[A-Z]+>' nyt_eng_199411.txt.tagged
