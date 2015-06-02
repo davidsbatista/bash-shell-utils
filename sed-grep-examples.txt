@@ -15,3 +15,6 @@ cat publico-all.txt | sed s/".*\t"/""/g | sed s/"['\"\(\)\`”′″‴«»„�
 
 # replace long tags with short tags, e.g., <ORGANIZATION> to <ORG>
 cat annotations/sentences_uniq_random.txt | sed 's/<ORGANIZATION>/<ORG>/g' | sed 's/<\/ORGANIZATION>/<\/ORG>/g' | sed 's/<PERSON>/<PER>/g' | sed 's/<\/PERSON>/<\/PER>/g' | sed 's/<LOCATION>/<LOC>/g' | sed 's/<\/LOCATION>/<\/LOC>/g'
+
+# add tag to a string in a file
+sed 's/ Facebook / <ORG>Facebook<\/ORG> /g' sentences_matched_freebase.txt > sentences_matched_freebase2.txt
