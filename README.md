@@ -5,7 +5,7 @@ pretty print a JSON file to stdout
 
 cartesian product of two files
 
-    while read a; do while read b; do echo "$a;$b"; done < politicians_democratic.txt; done < politicians_republicans.txt
+    while read a; do while read b; do echo "$a;$b"; done < a_democratics.txt; done < b_republicans.txt
 
 
 extract anchor links from wiki_text
