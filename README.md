@@ -1,3 +1,9 @@
+Bash Shell Scripts and Commands
+===============================
+
+Several commands and scripts utilities for bash-shell
+
+
 pretty print a JSON file to stdout
 
     cat file.json | python -m json.tool
