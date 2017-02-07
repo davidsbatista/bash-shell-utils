@@ -55,7 +55,7 @@ add tag to a string in a file
 
 clean publico.pt crawled news articles
 
-cat publico-all.txt | sed s/".*\t"/""/g | sed s/"['\"\(\)\`”′″‴«»„”]"/""/g | sed s/"--"/"-"/g | sed s/"\([.,;]\)"/" \1   "/g | sed s/"  "/" "/g | sed s/"[.\!?] *\([A-Z]\)"/"\n\1"/g | sed s/"\(\w\)[\.,;\!?\"]"/"\1 "/g | sed s/"  "/" "/g > input.pt.txt
+    cat publico-all.txt | sed s/".*\t"/""/g | sed s/"['\"\(\)\`”′″‴«»„”]"/""/g | sed s/"--"/"-"/g | sed s/"\([.,;]\)"/" \1   "/g | sed s/"  "/" "/g | sed s/"[.\!?] *\([A-Z]\)"/"\n\1"/g | sed s/"\(\w\)[\.,;\!?\"]"/"\1 "/g | sed s/"  "/" "/g > input.pt.txt
 
 replace long tags with short tags, e.g., <ORGANIZATION> to <ORG>
 
