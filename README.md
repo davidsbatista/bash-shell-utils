@@ -1,6 +1,6 @@
 pretty print a JSON file to stdout
 
-    cat file.json | python -mjson.tool
+    cat file.json | python -m json.tool
 
 
 cartesian product of two files
